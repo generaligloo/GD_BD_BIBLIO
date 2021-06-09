@@ -47,6 +47,7 @@ namespace GD_BD_BIBLIO
             this.B_gestion_client = new System.Windows.Forms.Button();
             this.B_generer_bordereau = new System.Windows.Forms.Button();
             this.GB_livre = new System.Windows.Forms.GroupBox();
+            this.ChB_retard = new System.Windows.Forms.CheckBox();
             this.ChB_pegi = new System.Windows.Forms.CheckBox();
             this.b_stock_html = new System.Windows.Forms.Button();
             this.ChB_dispo = new System.Windows.Forms.CheckBox();
@@ -56,7 +57,6 @@ namespace GD_BD_BIBLIO
             this.cNom_livre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cCat_livre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cPub_livre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ChB_retard = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_client)).BeginInit();
             this.GB_client.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_location)).BeginInit();
@@ -249,6 +249,17 @@ namespace GD_BD_BIBLIO
             this.GB_livre.TabStop = false;
             this.GB_livre.Text = "Section Livres";
             // 
+            // ChB_retard
+            // 
+            this.ChB_retard.AutoCheck = false;
+            this.ChB_retard.AutoSize = true;
+            this.ChB_retard.Location = new System.Drawing.Point(148, 286);
+            this.ChB_retard.Name = "ChB_retard";
+            this.ChB_retard.Size = new System.Drawing.Size(67, 17);
+            this.ChB_retard.TabIndex = 8;
+            this.ChB_retard.Text = "Retard ?";
+            this.ChB_retard.UseVisualStyleBackColor = true;
+            // 
             // ChB_pegi
             // 
             this.ChB_pegi.AutoCheck = false;
@@ -335,20 +346,9 @@ namespace GD_BD_BIBLIO
             // cPub_livre
             // 
             this.cPub_livre.DataPropertyName = "livre_ann_pub";
-            this.cPub_livre.HeaderText = "Anné de publication";
+            this.cPub_livre.HeaderText = "Année de publication";
             this.cPub_livre.Name = "cPub_livre";
             this.cPub_livre.ReadOnly = true;
-            // 
-            // ChB_retard
-            // 
-            this.ChB_retard.AutoCheck = false;
-            this.ChB_retard.AutoSize = true;
-            this.ChB_retard.Location = new System.Drawing.Point(148, 286);
-            this.ChB_retard.Name = "ChB_retard";
-            this.ChB_retard.Size = new System.Drawing.Size(67, 17);
-            this.ChB_retard.TabIndex = 8;
-            this.ChB_retard.Text = "Retard ?";
-            this.ChB_retard.UseVisualStyleBackColor = true;
             // 
             // EcranPrincipal
             // 
@@ -387,10 +387,6 @@ namespace GD_BD_BIBLIO
         private System.Windows.Forms.DataGridViewTextBoxColumn cNom_client;
         private System.Windows.Forms.DataGridViewTextBoxColumn cNai_client;
         private System.Windows.Forms.Button B_edition_livre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cID_livre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cNom_livre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cCat_livre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cPub_livre;
         private System.Windows.Forms.CheckBox ChB_dispo;
         private System.Windows.Forms.Button b_stock_html;
         private System.Windows.Forms.Button B_gestion_client;
@@ -405,5 +401,9 @@ namespace GD_BD_BIBLIO
         private System.Windows.Forms.CheckBox ChB_pegi;
         private System.Windows.Forms.Button B_affic_loca;
         private System.Windows.Forms.CheckBox ChB_retard;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cID_livre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cNom_livre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cCat_livre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cPub_livre;
     }
 }

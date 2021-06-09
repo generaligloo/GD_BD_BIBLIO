@@ -47,7 +47,8 @@ namespace GD_BD_BIBLIO
             // 
             this.DGV_detail.AllowUserToAddRows = false;
             this.DGV_detail.AllowUserToDeleteRows = false;
-            this.DGV_detail.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            this.DGV_detail.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.DGV_detail.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.DGV_detail.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.cID_details,
             this.cTitre_ID_livre,
@@ -59,7 +60,7 @@ namespace GD_BD_BIBLIO
             this.DGV_detail.Name = "DGV_detail";
             this.DGV_detail.ReadOnly = true;
             this.DGV_detail.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGV_detail.Size = new System.Drawing.Size(230, 150);
+            this.DGV_detail.Size = new System.Drawing.Size(321, 150);
             this.DGV_detail.TabIndex = 8;
             this.DGV_detail.SelectionChanged += new System.EventHandler(this.DGV_detail_SelectionChanged);
             // 
@@ -105,7 +106,7 @@ namespace GD_BD_BIBLIO
             // DTP_limite
             // 
             this.DTP_limite.Enabled = false;
-            this.DTP_limite.Location = new System.Drawing.Point(12, 191);
+            this.DTP_limite.Location = new System.Drawing.Point(102, 165);
             this.DTP_limite.Name = "DTP_limite";
             this.DTP_limite.Size = new System.Drawing.Size(231, 20);
             this.DTP_limite.TabIndex = 10;
@@ -123,9 +124,9 @@ namespace GD_BD_BIBLIO
             // 
             // B_changer_limite
             // 
-            this.B_changer_limite.Location = new System.Drawing.Point(12, 218);
+            this.B_changer_limite.Location = new System.Drawing.Point(12, 191);
             this.B_changer_limite.Name = "B_changer_limite";
-            this.B_changer_limite.Size = new System.Drawing.Size(231, 23);
+            this.B_changer_limite.Size = new System.Drawing.Size(321, 23);
             this.B_changer_limite.TabIndex = 11;
             this.B_changer_limite.Text = "Changer la date limite";
             this.B_changer_limite.UseVisualStyleBackColor = true;
@@ -133,9 +134,9 @@ namespace GD_BD_BIBLIO
             // 
             // B_rendu
             // 
-            this.B_rendu.Location = new System.Drawing.Point(12, 247);
+            this.B_rendu.Location = new System.Drawing.Point(12, 220);
             this.B_rendu.Name = "B_rendu";
-            this.B_rendu.Size = new System.Drawing.Size(230, 23);
+            this.B_rendu.Size = new System.Drawing.Size(321, 23);
             this.B_rendu.TabIndex = 12;
             this.B_rendu.Text = "Rendre le livre";
             this.B_rendu.UseVisualStyleBackColor = true;
@@ -146,7 +147,7 @@ namespace GD_BD_BIBLIO
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(255, 281);
+            this.ClientSize = new System.Drawing.Size(348, 255);
             this.Controls.Add(this.B_rendu);
             this.Controls.Add(this.B_changer_limite);
             this.Controls.Add(this.DTP_limite);

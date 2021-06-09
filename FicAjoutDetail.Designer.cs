@@ -45,15 +45,15 @@ namespace GD_BD_BIBLIO
             // CB_livre_detail
             // 
             this.CB_livre_detail.FormattingEnabled = true;
-            this.CB_livre_detail.Location = new System.Drawing.Point(13, 169);
+            this.CB_livre_detail.Location = new System.Drawing.Point(13, 168);
             this.CB_livre_detail.Name = "CB_livre_detail";
-            this.CB_livre_detail.Size = new System.Drawing.Size(230, 21);
+            this.CB_livre_detail.Size = new System.Drawing.Size(200, 21);
             this.CB_livre_detail.TabIndex = 1;
             // 
             // ChB_limite
             // 
             this.ChB_limite.AutoSize = true;
-            this.ChB_limite.Location = new System.Drawing.Point(13, 198);
+            this.ChB_limite.Location = new System.Drawing.Point(265, 170);
             this.ChB_limite.Name = "ChB_limite";
             this.ChB_limite.Size = new System.Drawing.Size(84, 17);
             this.ChB_limite.TabIndex = 2;
@@ -63,7 +63,7 @@ namespace GD_BD_BIBLIO
             // 
             // B_conf_aj_detail
             // 
-            this.B_conf_aj_detail.Location = new System.Drawing.Point(13, 248);
+            this.B_conf_aj_detail.Location = new System.Drawing.Point(13, 195);
             this.B_conf_aj_detail.Name = "B_conf_aj_detail";
             this.B_conf_aj_detail.Size = new System.Drawing.Size(106, 23);
             this.B_conf_aj_detail.TabIndex = 4;
@@ -73,7 +73,7 @@ namespace GD_BD_BIBLIO
             // 
             // B_ann_aj_detail
             // 
-            this.B_ann_aj_detail.Location = new System.Drawing.Point(137, 248);
+            this.B_ann_aj_detail.Location = new System.Drawing.Point(426, 194);
             this.B_ann_aj_detail.Name = "B_ann_aj_detail";
             this.B_ann_aj_detail.Size = new System.Drawing.Size(106, 23);
             this.B_ann_aj_detail.TabIndex = 5;
@@ -84,9 +84,9 @@ namespace GD_BD_BIBLIO
             // DTP_limite
             // 
             this.DTP_limite.Enabled = false;
-            this.DTP_limite.Location = new System.Drawing.Point(13, 221);
+            this.DTP_limite.Location = new System.Drawing.Point(355, 168);
             this.DTP_limite.Name = "DTP_limite";
-            this.DTP_limite.Size = new System.Drawing.Size(230, 20);
+            this.DTP_limite.Size = new System.Drawing.Size(177, 20);
             this.DTP_limite.TabIndex = 6;
             // 
             // DGV_detail
@@ -94,6 +94,8 @@ namespace GD_BD_BIBLIO
             this.DGV_detail.AllowUserToAddRows = false;
             this.DGV_detail.AllowUserToDeleteRows = false;
             this.DGV_detail.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DGV_detail.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
+            this.DGV_detail.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGV_detail.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.cID_details,
             this.cTitre_ID_livre,
@@ -102,8 +104,9 @@ namespace GD_BD_BIBLIO
             this.DGV_detail.MultiSelect = false;
             this.DGV_detail.Name = "DGV_detail";
             this.DGV_detail.ReadOnly = true;
+            this.DGV_detail.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.DGV_detail.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGV_detail.Size = new System.Drawing.Size(230, 150);
+            this.DGV_detail.Size = new System.Drawing.Size(519, 150);
             this.DGV_detail.TabIndex = 7;
             // 
             // cID_details
@@ -132,7 +135,7 @@ namespace GD_BD_BIBLIO
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(257, 280);
+            this.ClientSize = new System.Drawing.Size(544, 228);
             this.Controls.Add(this.DGV_detail);
             this.Controls.Add(this.DTP_limite);
             this.Controls.Add(this.B_ann_aj_detail);
